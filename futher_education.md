@@ -40,5 +40,6 @@ https://www.hackerrank.com/
 
 # общение
 https://gitter.im/rolling-scopes-school/padawans
+https://frontendbelarus.slack.com/ - объединенный чат frontend разработчиков 
 
 
