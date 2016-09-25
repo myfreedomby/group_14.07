@@ -1,3 +1,11 @@
+Object.prototype.values = function(obj) {
+    var keys = Object.keys()
+    return keys.map(function(key) {
+        return obj[key]
+    })
+}
+
+
 var INGRIDIENTS = {
     'cheese': {
         weight: 50,
