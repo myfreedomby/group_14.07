@@ -9,17 +9,14 @@
 <body>
 <h1>Cooking pizza!</h1>
 <p>Choose receipt:</p>
-<select>
-
-
+<select class="js-choose-recipe">
+    <option value="none">not selected</option>
 </select>
 
-<p>Выбрано:</p>
+<p class="js-choose" data-id="choose">Выбрано:</p>
 <p>
 <div>Рецепт</div>
-<ul>
-    <li>Пока ничего не выбрано</li>
-</ul>
+<div class="js-chosen-recipe">Ничего не выбрано</div>
 <div>Дополнительные ингридиенты</div>
 <ul>
     <li>Пока ничего не выбрано</li>
