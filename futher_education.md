@@ -35,9 +35,17 @@
 * http://speakingjs.com/es5/
 * https://learn.javascript.ru/
 * паттерны джаваскрипта
+  * http://shop.oreilly.com/product/9780596806767.do
 * совершенный код
+  * 
 * структуры данных на js
+  * http://shop.oreilly.com/product/0636920029557.do
+  * можно еще сюда глянуть https://www.npmjs.com/package/datastructures-js
+  
+  
 * функциональный js
+  * http://shop.oreilly.com/product/0636920028857.do
+  
 
 # общение
 * https://gitter.im/rolling-scopes-school/padawans
