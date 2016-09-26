@@ -17,6 +17,7 @@
 * http://www.w3schools.com/js/
 * https://www.codecademy.com/learn/javascript
 * https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001
+* https://www.khanacademy.org/computing/computer-programming  (много курсов по js )
 
 
 * https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
