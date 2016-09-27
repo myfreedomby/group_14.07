@@ -27,24 +27,40 @@
 * https://www.coursera.org/learn/introduction-to-algorithms
 * https://www.coursera.org/learn/algorithm-design-analysis
 
+* https://habrahabr.ru/post/126527/ - бесплатные уроки
+
+
 
 # other courses
 * https://github.com/rolling-scopes/front-end-course/wiki/Course-Curriculum-2.0
 
 
 # practise
+* https://adriann.github.io/programming_problems.html - маленькие обще программисткие задачки
+
+
 * https://www.codewars.com/
 * https://www.hackerrank.com/
 * http://www.w3resource.com/javascript-exercises/
+* http://reactivex.io/learnrx/ - функциональный js
+
+* https://htmlacademy.ru/
+* http://www.learn-js.org/
+* https://codecombat.com/
+
 
 + можно делать друзьям сайты )
 
 нужно нарабатывать коммерческий опыт
 
+
+
 # books
 
 * http://speakingjs.com/es5/
 * https://learn.javascript.ru/
+* http://eloquentjavascript.net/
+* http://shop.oreilly.com/product/9780596802806.do High Performance JavaScript 
 * паттерны джаваскрипта
   * http://shop.oreilly.com/product/9780596806767.do
 * совершенный код
