@@ -97,18 +97,7 @@ var recipes = {
         ]
     }
 }
-//var pizza = new Pizza(recipeMargarita)
-//console.log('pizza weight: ', pizza.getWeight())
 
-
-
-
-
-
-function logEvent(e) {
-    alert('hello!')
-    console.log(e)
-}
 
 function renderIngridients(ingridients) {
     function renderIngridient(ingridient) {
