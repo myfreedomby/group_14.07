@@ -9,72 +9,6 @@ function getObjectValues(obj) {
 }
 
 
-var INGRIDIENTS = {
-    'cheese': {
-        name: 'cheese',
-        weight: 50,
-        calories: 50
-    },
-    'sauce': {
-        name: 'sauce',
-        weight: 10,
-        calories: 20
-    },
-    'mozzarela': {
-        name: 'mozzarela',
-        weight: 25,
-        calories: 25
-    },
-    'camamber': {
-        name: 'camamber',
-        weight: 25,
-        calories: 25
-    },
-    'feta': {
-        name: 'feta',
-        weight: 25,
-        calories: 25
-    },
-    'peperoni': {
-        name: 'peperoni',
-        weight: 20,
-        calories: 20
-    }
-}
-
-
-var recipes = {
-    'margarita': {
-        id: 'margarita',
-        name: 'Margarita',
-        base: {
-            weight: 100,
-            calories: 30
-        },
-        ingridients: [
-            INGRIDIENTS.cheese,
-            INGRIDIENTS.sauce,
-            INGRIDIENTS.mozzarela
-        ]
-    },
-    'four_cheeses': {
-        id: 'four_cheeses',
-        name: 'Four cheeses',
-        base: {
-            weight: 200,
-            calories: 120
-        },
-        ingridients: [
-            INGRIDIENTS.cheese,
-            INGRIDIENTS.mozzarela,
-            INGRIDIENTS.camamber,
-            INGRIDIENTS.feta,
-            INGRIDIENTS.sauce
-        ]
-    }
-}
-
-
 function renderIngridients(ingridients) {
     function renderIngridient(ingridient) {
         return '<li>' + ingridient.name + '</li>'
@@ -84,7 +18,7 @@ function renderIngridients(ingridients) {
     return '<ul class="js-ingridients">' + result.join('') + '</ul>'
 }
 
-$(function () {
+function renderHtml(recipes) {
     var $select = $('.js-choose-recipe')
     var $chosenRecipe = $('.js-chosen-recipe')
 
@@ -113,18 +47,36 @@ $(function () {
         $chosenRecipe.after(ingridientsHtml)
 
     })
+}
 
+function getRecipes(ingridients, endCallback) {
     $.ajax({
         dataType: "json",
         data: 'text',
-        url: 'http://localhost:8080/2016_10_02_ajax_pizza/ingridients.json',
+        url: 'http://localhost:8080/2016_10_02_ajax_pizza/pizza.json',
         success: function(data) {
+
+            var values = getObjectValues(data)
+            values.forEach(function (value) {
+                value.ingridients = value.ingridients.map(function (ingrName) {
+                    return ingridients[ingrName]
+                })
+            })
             console.log(data)
+            var recipes = data
+
+            endCallback.apply(null, [recipes])
         }
     });
-    // $.getJSON("ingridients.json", function (data) {
-    //     console.log(data)
-    // })
+}
+
+$(function () {
+    $.getJSON("ingridients.json", function (ingridients) {
+        getRecipes(ingridients, function (recipes) {
+            renderHtml(recipes)
+        })
+        console.log(ingridients)
+    })
 
 })
 

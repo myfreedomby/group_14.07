@@ -1,62 +1,32 @@
 {
-  "margarita": {
-    "id": "margarita",
-    "name": "Margarita",
-    "base": {
-      "weight": 100,
-      "calories": 30
-    },
-    "ingridients": [
-      {
-        "name": "cheese",
-        "weight": 50,
-        "calories": 50
-      },
-      {
-        "name": "sauce",
-        "weight": 10,
-        "calories": 20
-      },
-      {
-        "name": "mozzarela",
-        "weight": 25,
-        "calories": 25
-      }
-    ]
+  "cheese": {
+    "name": "cheese",
+    "weight": 50,
+    "calories": 50
   },
-  "four_cheeses": {
-    "id": "four_cheeses",
-    "name": "Four cheeses",
-    "base": {
-      "weight": 200,
-      "calories": 120
-    },
-    "ingridients": [
-      {
-        "name": "cheese",
-        "weight": 50,
-        "calories": 50
-      },
-      {
-        "name": "mozzarela",
-        "weight": 25,
-        "calories": 25
-      },
-      {
-        "name": "camamber",
-        "weight": 25,
-        "calories": 25
-      },
-      {
-        "name": "feta",
-        "weight": 25,
-        "calories": 25
-      },
-      {
-        "name": "sauce",
-        "weight": 10,
-        "calories": 20
-      }
-    ]
+  "sauce": {
+    "name": "sauce",
+    "weight": 10,
+    "calories": 20
+  },
+  "mozzarela": {
+    "name": "mozzarela",
+    "weight": 25,
+    "calories": 25
+  },
+  "camamber": {
+    "name": "camamber",
+    "weight": 25,
+    "calories": 25
+  },
+  "feta": {
+    "name": "feta",
+    "weight": 25,
+    "calories": 25
+  },
+  "peperoni": {
+    "name": "peperoni",
+    "weight": 20,
+    "calories": 20
   }
 }
