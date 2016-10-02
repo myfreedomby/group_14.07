@@ -1,6 +1,14 @@
 // creating objects
 var recipeMargarita = {}
 
+function getObjectValues(obj) {
+    var keys = Object.keys(obj)
+    return keys.map(function(key) {
+        return obj[key]
+    })
+}
+
+
 var INGRIDIENTS = {
     'cheese': {
         name: 'cheese',
@@ -80,7 +88,7 @@ $(function () {
     var $select = $('.js-choose-recipe')
     var $chosenRecipe = $('.js-chosen-recipe')
 
-    Object.values(recipes).forEach(function (recipe) {
+    getObjectValues(recipes).forEach(function (recipe) {
         var $option = $('<option value="' + recipe.id + '">' + recipe.name + '</option>')
         $select.append($option)
     })
@@ -106,4 +114,18 @@ $(function () {
 
     })
 
+    $.ajax({
+        dataType: "json",
+        data: 'text',
+        url: 'http://localhost:8080/2016_10_02_ajax_pizza/ingridients.json',
+        success: function(data) {
+            console.log(data)
+        }
+    });
+    // $.getJSON("ingridients.json", function (data) {
+    //     console.log(data)
+    // })
+
 })
+
+

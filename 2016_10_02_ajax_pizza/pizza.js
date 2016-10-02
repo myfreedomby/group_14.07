@@ -1,9 +1,4 @@
-Object.prototype.values = function(obj) {
-    var keys = Object.keys(obj)
-    return keys.map(function(key) {
-        return obj[key]
-    })
-}
+
 
 
 
