@@ -1,0 +1,30 @@
+{
+  "margarita": {
+    "id": "margarita",
+    "name": "Margarita",
+    "base": {
+      "weight": 100,
+      "calories": 30
+    },
+    "ingridients": [
+      "cheese",
+      "sauce",
+      "mozzarela"
+    ]
+  },
+  "four_cheeses": {
+    "id": "four_cheeses",
+    "name": "Four cheeses",
+    "base": {
+      "weight": 200,
+      "calories": 120
+    },
+    "ingridients": [
+      "cheese",
+      "mozzarela",
+      "camamber",
+      "feta",
+      "sauce"
+    ]
+  }
+}
