@@ -7,6 +7,8 @@
 * Английский язык уровня A2+
 * lingualeo, duolingva
 
+https://habrahabr.ru/post/306716/ - Frontend-разработчики должны быть в теме всего
+
 # online education
 * http://dzmitry-varabei.github.io/online-education/#/
 
